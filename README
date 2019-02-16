@@ -1,0 +1,15 @@
+# Title: donkey
+# Description: donkey is a Python3 script that removes the specified number of lines from the tail of a file
+# Author: Andrew T. Withers (atw31337@gmail.com)
+#############################################################################################################
+
+Usage: donkey -n <NUM> [OPTION]... [FILE] 
+
+ -o <FILE>	 Output file
+ -n <NUM>	 Output all lines except the last n number of lines
+ -e		 Edit input file. Overwrites the original file. Cannot be used with -o
+
+There is no default number of lines to be removed; therefore, the -n option must be specified. The output can
+be saved to file using either -o OR -e. -o will overwrite the specified output file if it already exists or 
+create the file if it does not. -e will overwrite the original input file with the output of the command.
+If neither output option is selected, then the output is written to stdout.
