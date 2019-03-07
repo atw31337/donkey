@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # Title: donkey
-# Description: Removes the tail from a file
+# Description: Removes the tail from a file [Deprecated]
 # Author: Andrew T. Withers (atw31337@gmail.com)
 
 import sys, getopt
