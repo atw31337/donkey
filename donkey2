@@ -6,6 +6,7 @@
 import sys, getopt
 from shutil import move
 from random import randint
+from collections import deque
 
 def usage():
 	print('Usage: '+sys.argv[0]+' -n <NUM> [OPTION]... [FILE] ')
@@ -97,7 +98,7 @@ def main():
 				else:
 					break		# Stop reading from input once the output limit is reach
 		elif int(remove) > 0:
-			buffer = []
+			buffer = deque()
 			for l in iFile:
 				if count <= int(remove):	# Add the first n number of lines to the buffer
 					buffer.append(l)
@@ -107,7 +108,7 @@ def main():
 						sys.stdout.flush()
 					else:
 						oFile.write(buffer[0])
-					buffer.pop(0)	# Remove the first element in the buffer
+					buffer.popleft()	# Remove the first element in the buffer
 					buffer.append(l)	# Append the current line to the buffer
 				count+=1
 	if output != "stdout":
