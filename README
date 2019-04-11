@@ -3,7 +3,7 @@
 # Author: Andrew T. Withers (atw31337@gmail.com)
 #############################################################################################################
 
-Usage: donkey -n <NUM> [OPTION]... [FILE] 
+Usage: donkey -n <NUM> [OPTION]... <INPUT FILE> 
 
  -o <FILE>	 Output file
  -n <NUM>	 Output all lines except the last n number of lines
