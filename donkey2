@@ -9,7 +9,7 @@ from random import randint
 from collections import deque
 
 def usage():
-	print('Usage: '+sys.argv[0]+' -n <NUM> [OPTION]... [FILE] ')
+	print('Usage: '+sys.argv[0]+' -n <NUM> [OPTION]... <INPUT FILE> ')
 	print()
 	print('	 -o <FILE>      Output file')
 	print('	 -n <NUM>	Output all lines except the last n number of lines')
